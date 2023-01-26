@@ -22,7 +22,7 @@ Un núcleo es un programa de software que se utiliza para acceder a los componen
 | El modo de usuario se considera como el modo esclavo o el modo restringido. | El modo Kernel es el modo del sistema, el modo maestro o el modo privilegiado. |  
 | Todos los procesos obtienen un espacio de direcciones virtuales separado. | Todos los procesos comparten un único espacio de direcciones virtuales. |   
 | Necesita acceder a los programas del kernel, ya que no puede acceder a ellos directamente |  Puede acceder tanto a los programas del usuario como a los programas del kernel, no hay restricciones |  
-| Tiempo; el bit de modo del modo de usuario es 1. | El bit de modo de kernel-mode es 0. |  
+| Tiempo; el bit de modo del modo de usuario es 1. | |El bit de modo de kernel-mode es 0. |  
 | Solo puede hacer referencias a la memoria asignada para el modo de usuario. | | Es capaz de hacer referencia a ambas áreas de memoria. |
 | Es un modo de visualización estándar y típico, lo que implica que la información no puede ejecutarse por sí sola ni hacer referencia a ningún bloque de memoria; necesita una interfaz de protocolo de aplicación (API) para lograr estas cosas. | |Puede hacer referencia a cualquier bloque de memoria en el sistema y también puede dirigir la CPU para la ejecución de una instrucción|
 
