@@ -12,7 +12,7 @@ Un núcleo es un programa de software que se utiliza para acceder a los componen
 
  Por lo tanto, es el programa más privilegiado, a diferencia de otros programas, puede interactuar directamente con el hardware. Cuando los programas que se ejecutan en modo de usuario necesitan acceso al hardware, por ejemplo, una cámara web, primero tiene que pasar por el núcleo mediante una llamada al sistema y, para llevar a cabo estas solicitudes, la CPU cambia del modo de usuario al modo de núcleo en el momento de la ejecución. Después de completar finalmente la ejecución del proceso, la CPU vuelve a cambiar al modo de usuario .
 
- ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Priv_rings.svg/1200px-Priv_rings.svg.png)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQWgegF-TH3bz6upNBvqF26Ekc5qIRPSuyQD_CBj_Ypooq00huKIDi-d9TwZvXZcr0Ic&usqp=CAU) 
 
  ## 1.3 Tabla Comparativa
  
@@ -25,3 +25,5 @@ Un núcleo es un programa de software que se utiliza para acceder a los componen
 | Tiempo; el bit de modo del modo de usuario es 1. | El bit de modo de kernel-mode es 0. |  
 | Solo puede hacer referencias a la memoria asignada para el modo de usuario. | | Es capaz de hacer referencia a ambas áreas de memoria. |
 | Es un modo de visualización estándar y típico, lo que implica que la información no puede ejecutarse por sí sola ni hacer referencia a ningún bloque de memoria; necesita una interfaz de protocolo de aplicación (API) para lograr estas cosas. | |Puede hacer referencia a cualquier bloque de memoria en el sistema y también puede dirigir la CPU para la ejecución de una instrucción|
+
+![](https://www.fastweb.it/var/storage_feeds/cms20/media/fwb_wbce_cms20_fwplus/bcf/bcfec122af48c7cc9c8181f22ec0e64e/Kernel_Layout.svg.png)
