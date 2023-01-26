@@ -11,6 +11,9 @@ Los programas de modo de usuario tienen menos privilegios que las aplicaciones d
 Un núcleo es un programa de software que se utiliza para acceder a los componentes de hardware de un sistema informático. Kernel funciona como un software de middleware para hardware y software de aplicación/programas de usuario. El modo Kernel generalmente se reserva para funciones confiables de bajo nivel del sistema operativo.
 
  Por lo tanto, es el programa más privilegiado, a diferencia de otros programas, puede interactuar directamente con el hardware. Cuando los programas que se ejecutan en modo de usuario necesitan acceso al hardware, por ejemplo, una cámara web, primero tiene que pasar por el núcleo mediante una llamada al sistema y, para llevar a cabo estas solicitudes, la CPU cambia del modo de usuario al modo de núcleo en el momento de la ejecución. Después de completar finalmente la ejecución del proceso, la CPU vuelve a cambiar al modo de usuario .
+
+ ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Priv_rings.svg/1200px-Priv_rings.svg.png)
+
  ## 1.3 Tabla Comparativa
  
  | Modo Usuario  | Modo Kernel  | 
@@ -20,5 +23,5 @@ Un núcleo es un programa de software que se utiliza para acceder a los componen
 | Todos los procesos obtienen un espacio de direcciones virtuales separado. | Todos los procesos comparten un único espacio de direcciones virtuales. |   
 | Necesita acceder a los programas del kernel, ya que no puede acceder a ellos directamente |  Puede acceder tanto a los programas del usuario como a los programas del kernel, no hay restricciones |  
 | Tiempo; el bit de modo del modo de usuario es 1. | El bit de modo de kernel-mode es 0. |  
-
-
+| Solo puede hacer referencias a la memoria asignada para el modo de usuario. | | Es capaz de hacer referencia a ambas áreas de memoria. |
+| Es un modo de visualización estándar y típico, lo que implica que la información no puede ejecutarse por sí sola ni hacer referencia a ningún bloque de memoria; necesita una interfaz de protocolo de aplicación (API) para lograr estas cosas. | |Puede hacer referencia a cualquier bloque de memoria en el sistema y también puede dirigir la CPU para la ejecución de una instrucción|
