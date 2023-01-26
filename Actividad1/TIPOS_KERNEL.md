@@ -26,7 +26,8 @@ A diferencia de los núcleos monolíticos tradicionales, los controladores de di
 ![](https://images.slideplayer.com/35/10413607/slides/slide_32.jpg)
 #### 1.2.4 ***Exonúcleo:*** 
 También conocidos como sistemas operativos verticalmente estructurados, representan una aproximación radicalmente nueva al diseño de sistemas operativos. La idea subyacente es permitir que el desarrollador tome todas las decisiones relativas al rendimiento del hardware. Los exonúcleos son extremadamente pequeños, ya que limitan expresamente su funcionalidad a la protección y el multiplexado de los recursos. Se llaman así porque toda la funcionalidad deja de estar residente en memoria y pasa a estar fuera, en librerías dinámicas.
-![](https://www.researchgate.net/publication/230883246/figure/fig3/AS:300569622269961@1448672790872/Exokernel-Architecture-24.png)
+
+
 
 
 
