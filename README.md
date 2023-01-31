@@ -1,1 +1,2 @@
-# so1_actividades_202010025
+# Actividades del Curso Sistemas Operativos 1
+## Ayeser Cristián Oxlaj Juarez - 202010025
