@@ -1,0 +1,8 @@
+[Unit]
+Description= 202010025 Activdad 4 
+
+[Service]
+User=ayeser
+ExecStart=/home/ayeser/Escritorio/so1_actividades_202010025/Actividad4/script.sh
+[Install]
+WantedBy=multi-user.target
